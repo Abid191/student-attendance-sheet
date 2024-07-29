@@ -44,10 +44,10 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   dividerTwo: {
-    marginHorizontal: 202,
+    marginHorizontal: 225,
     borderBottom: 2,
     borderStyle: 'dashed',
-    width: 345
+    width: 325
   },
   table: {
     marginTop: 10,
@@ -74,67 +74,64 @@ const styles = StyleSheet.create({
     marginLeft: 0,
     width: 'auto',
   },
-  Sectable: {
+  tableOne: {
+    marginTop: 8,
     display: 'table',
-    marginTop: 10,
+    width: 'auto',
   },
-  SectableRow: {
+  tableRowOne: {
     flexDirection: 'row',
-    backgroundColor: 'grey',
-    padding: 8,
   },
-  SectableCol: {
-
-  },
-  StudentID:{
-    fontSize:11,
-    paddingHorizontal:9
-  },
-  StudentRoll:{
-    fontSize:10,
-    paddingHorizontal:7
-  },
-  StudentName:{
-    fontSize:11,
-    paddingHorizontal:9
-  },
-  SectableTextName: {
-    marginLeft:0,
-    fontSize: 11,
-    width:'auto',
-    color: 'white',
-    marginRight: 10,
-  },
-  SectableText: {
-    marginLeft: 5,
-    fontSize: 9,
-    color: 'white',
-  },
-  ThrdtableRow:{
-    flexDirection:'row',
-  },
-  ThrdtableCol:{
+  tableColOne: {
     borderStyle: 'solid',
-    borderWidth: 0.4,
+    borderWidth: 0.8,
     height: 'auto',
-    padding:5
+    padding: 5,
+    backgroundColor: 'grey'
   },
-  ThrdtableText:{
+  headerText: {
+    fontSize: 5,
+    width: 10,
+  },
+  headerTextStu: {
     fontSize: 6,
-  },
-  tableID:{
-    fontSize:10,
-    paddingHorizontal:12
-  },
-  tableRoll:{
-    fontSize:10,
-    paddingHorizontal:0
-  },
-  tableName:{
-    fontSize:10,
-    paddingHorizontal:12
-  },
+    width: 100,
 
+  },
+  tableColTwo: {
+    borderStyle: 'solid',
+    borderWidth: 0.8,
+    height: 'auto',
+    padding: 5,
+  },
+  headerTextTwo: {
+    fontSize: 5.5,
+  },
+  footer: {
+    flexDirection: 'row',
+    position: 'absolute',
+    display: 'block',
+    bottom: 20,
+    borderTop: ' 1px dashed black',
+    width: '100%',
+    fontSize: 10,
+    justifyContent: 'space-between',
+    // marginTop: 20,
+    marginLeft: 30,
+  },
+  footerText: {
+    fontSize:8,
+    marginTop: 5,
+    marginLeft: 0
+  },
+  pageNumber: {
+    fontSize:8,
+    marginTop: 5,
+  },
+  printDateTime: {
+    fontSize:8,
+    marginTop: 5,
+  },
 
 })
 
@@ -216,225 +213,232 @@ const MyDocument = () => {
 
           {/* Second Table */}
 
-          <View style={styles.Sectable}>
-            <View style={styles.SectableRow}>
-              <View style={styles.SectableCol}>
-                <Text style={styles.StudentID}> Student Id </Text>
+          <View style={styles.tableOne}>
+            <View style={styles.tableRowOne}>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerTextStu}> Student ID</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.StudentRoll}> Roll </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerTextStu}> Roll </Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.StudentName}> Name </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerTextStu}> Student Name</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 01 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 01</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 02 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 02</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 03 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 03</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 04 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 04</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 05 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 05</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 06 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 06</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 07 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 07</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 08 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 08</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 09 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 09</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 10 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 10</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 11 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 11</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 12 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 12</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 13 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 13</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 14 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 14</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 15 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 15</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 16 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 16</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 17 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 17</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 18 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 18</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 19 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 19</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 20 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 20</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 21 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 21</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 22 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 22</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 23 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 23</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 24 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 24</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 25 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 25</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 26 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 26</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 27 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 27</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 28 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 28</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 29 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 29</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 30 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 30</Text>
               </View>
-              <View style={styles.SectableCol}>
-                <Text style={styles.SectableText}> 31 </Text>
+              <View style={styles.tableColOne}>
+                <Text style={styles.headerText}> 31</Text>
               </View>
             </View>
-
-            {/* Second Table End */}
-
-
             {Array.from({ length: 1 }).map((_, i) => (
-              <View style={styles.ThrdtableRow} key={i}>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.tableID}> 6834124</Text>
+              <View style={styles.tableRow} key={i} wrap={false}
+                pageBreak="avoid">
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerTextStu}> 655465</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.tableRoll}> 1111</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerTextStu}> 01</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.tableName}>Mr. Nayeem</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerTextStu}> Abid Hasan Purno</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
-                <View style={styles.ThrdtableCol}>
-                  <Text style={styles.ThrdtableText}>ABS</Text>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
+                </View>
+                <View style={styles.tableColTwo}>
+                  <Text style={styles.headerText}> ab</Text>
                 </View>
               </View>
             ))}
-
           </View>
-
         </View>
+        <Footer></Footer>
       </Page>
     </Document>
   )
 }
+
+const Footer = () => (
+  <View style={styles.footer} fixed >
+    <Text style={styles.footerText}>Design and developed by: Walton Group</Text>
+    <Text style={styles.pageNumber} render={({ pageNumber, totalPages }) => ` ${pageNumber} / ${totalPages}`} />
+    <Text style={styles.printDateTime}>Print Date and Time: Monday, 8 July 2024 11: 57: 44 AM</Text>
+  </View>
+)
 
 export default MyApp
